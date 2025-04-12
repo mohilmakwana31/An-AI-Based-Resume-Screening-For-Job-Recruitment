@@ -4,7 +4,7 @@
 
 
 # import required packeges(This section will include all future required packages)
-#import PyPDF2
+import PyPDF2
 import textract
 import re
 import string
@@ -15,7 +15,7 @@ from colorama import Fore, Style
 
 # This section will open the pdf file
 # open the pdf file
-file = open('Data Scientist-2.pdf', 'rb')
+file = open('resume_juanjosecarin.pdf', 'rb')
 reader = PyPDF2.PdfFileReader(file)  # Read file
 
 number_Of_pages = reader.numPages  # Get total number of pages
